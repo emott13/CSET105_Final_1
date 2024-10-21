@@ -14,7 +14,7 @@ function loaded(){
 }
 
 function buttonOptions(){
-    let buttons = document.getElementsByClassName('button');
+    let buttons = document.getElementsByClassName('btn');
     for(i = 0; i < buttons.length; i++){
         let button = buttons[i];
         button.addEventListener('click', () => {
@@ -44,8 +44,6 @@ function buttonOptions(){
         });
     }
 };
-
-
 
 function addItem(){
     let itemInput = document.getElementsByClassName('item-input')[0].value
