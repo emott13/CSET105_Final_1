@@ -1,0 +1,17 @@
+
+
+
+h1{
+ display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+color: rgb(140, 165, 234);
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;  
+}
