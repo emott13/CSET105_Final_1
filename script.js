@@ -5,3 +5,5 @@ function addToList() {
     document.getElementsByClassName('itemList')[0].appendChild(list);
     document.getElementsByClassName('userInput')[0].value = '';
 }
+
+
