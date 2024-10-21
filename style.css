@@ -1,0 +1,67 @@
+body{
+    margin-top: 50px;
+    background-image: url(./1624843.jpg);
+    background-size: cover;
+    
+}
+img{
+    display: block;
+    justify-content: center;
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+
+
+}
+
+h1{
+ display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+color: rgb(140, 165, 234);
+}
+h3, .list{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center;
+
+   }
+
+ul, li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;   
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+
+input:checked, li:{
+text-decoration: line-through;
+color: rgb(112, 156, 45);
+}
+
+button{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(115, 152, 184);
+    border-radius: 20px;
+}
+
+.list2{
+    height: 900px;
+    width: 400px;
+    background-color: rgb(140, 165, 234);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
