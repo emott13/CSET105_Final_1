@@ -5,29 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" async></script>
-    <title>Document</title>
+    <title>CSET 105 Final Project #1</title>
 </head>
 <body>
-    <img src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" alt="">
-    <h1>GROCERY LIST</h1>
-
-    <div class="list">
-         <input class="userInput" type="text" placeholder="item">
-        <button onclick="addToList()">Add to List</button>
-        <button class="btn" value="all-items" type="button">all items</button>
-        <button class="btn" value="purchased" type="button">purchased </button>
-        <button class="btn" value="unpurchased" type="button">unpurchased</button>
-    
-     </div>
-
-    <div class="list2">
-        <h3>GROCERY LIST ITEMS</h3>
-         <ul class="itemList">
-       
-        </ul>
-    </div>
-    
-
-
-</body>
-</html>
+    <section>
+        <img src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" alt="">
+        <h1>GROCERY LIST</h1>
+        <div class="addItems list">
+            <button class="btn" value="all-items">All items</button>
+            <button class="btn" value="purchased">Purchased</button>
+            <button class="btn" value="unpurchased">Unpurchased</button>
+            <input type="text" class="item-input" placeholder="Enter an item">
+            <input type="button" name="" class="btn-add-item" value="Add item to list">
+        </div>
+        <div class="displayItems">
+            <h3>GROCERY LIST ITEMS</h3>
+            <ul class="groceryItems list2">
+            </ul>
+        </div>
+    </section>
