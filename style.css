@@ -1,59 +1,94 @@
 body{
     margin-top: 50px;
-    background-image: url(./1624843.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./1624843.jpg);
     background-size: cover;
     
 }
+
 img{
     display: block;
     justify-content: center;
-   width: 200px;
-   margin-left: auto;
-   margin-right: auto;
-
-
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
- display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-color: rgb(140, 165, 234);
-}
-h3, .list{
-    display: flex;
-   flex-direction: row;
-   justify-content: center;
-   text-align: center;
-
-   }
-
-ul, li{
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
+    justify-content: center;
     text-align: center;
-    font-size: 28px;
-    margin-top: 0;
-    margin-bottom: 5px;
+    color: rgb(140, 165, 234);
+}
+
+h3, .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    text-align: center;   
+}
+
+li{
+    list-style: none;
+    font-size: 24px;
+    
 }
 
 button{
+    width: 120px;
+    height: 50px;
     color: black;
     background-color: rgb(255, 255, 255);
     border-color: rgb(115, 152, 184);
     border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.item-input{
+    margin: 10px;
+}
+
+.btn-add-item{
+    align-self: center;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #a8bfff;
 }
 
 .displayItems{
-    font-family: cursive;
-    display: flex;
-    flex-direction: column; 
-    margin-left: auto;
-    margin-right: auto;
+    font-family: Gochi Hand;
     height: 626px;
     width: 446px;
     background-image: url(./R.png);
     background-size: contain;
+    background-color: #e6e2c1;
+    border: #b0aa6b 2px inset;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
 }
