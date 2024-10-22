@@ -45,16 +45,6 @@ li{
     
 }
 
-/* .strikethrough{
-    text-decoration: line-through;
-} */
-
-
-/* input:checked, li:{
-text-decoration: line-through;
-color: rgb(112, 156, 45);
-} */
-
 button{
     width: 120px;
     height: 50px;
@@ -92,8 +82,10 @@ button{
 
 .displayItems{
     font-family: Gochi Hand;
-    height: 400px;
-    width: 20%;
+    height: 626px;
+    width: 446px;
+    background-image: url(./R.png);
+    background-size: contain;
     background-color: #e6e2c1;
     border: #b0aa6b 2px inset;
     display: flex;
