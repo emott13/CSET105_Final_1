@@ -19,7 +19,7 @@ h1{
 flex-direction: column;
 justify-content: center;
 text-align: center;
-color: rgb(140, 165, 234);
+color: rgb(198, 47, 75);
 }
 h3, .list{
     display: flex;
@@ -54,6 +54,7 @@ button{
     margin-right: auto;
     height: 626px;
     width: 446px;
+    margin-top: 50px;
     background-image: url(./R.png);
     background-size: contain;
 }
