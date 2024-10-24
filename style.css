@@ -24,7 +24,7 @@ h3, .list{
 
 @media(min-width: 900px){
     .buttons{
-        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         gap: 2vh;
     }
@@ -34,6 +34,7 @@ h3, .list{
 .btn{
     flex-basis: 33%;
     height: 50px;
+    margin-bottom: 8px;
     font-family: Amatic SC;
     font-weight: 900;
     font-size: 24px;
@@ -48,8 +49,10 @@ h3, .list{
 
 @media(min-width: 900px){
     .btn{
+        flex-direction: row;
         width: 200px;
         height: 70px;
+        margin-bottom: 0;
 
         font-weight: 900;
         font-size: 38px;
@@ -74,14 +77,22 @@ h3, .list{
 
 .inputs{
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin-top: 10px;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+@media(min-width: 900px){
+   .inputs{ 
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 10px;
+    }
 }
 
 .btn-list{
     align-self: center;
-    margin: 0px 20px;
+    margin: 4px 20px;
     height: 40px;
     width: 200px;
 
