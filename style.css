@@ -74,18 +74,27 @@ h3, .list{
 
 .btn-list{
     align-self: center;
-    height: 50px;
-    width: 240px;
+    margin: 0px 20px;
+    height: 40px;
+    width: 200px;
 
     color: #d7d6c7;
     font-family: Amatic SC;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 22px;    
     letter-spacing: 1px;
 
     background-color: #1c5809;
     border: solid 1px #123906;
     border-radius: 20px;
+}
+
+@media(min-width: 900px){
+    .btn-list{
+        height: 50px;
+        width: 240px;
+        font-size: 30px;
+    }
 }
 
 .btn-list:hover,
@@ -138,6 +147,7 @@ p{
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+    font-size: 19px;
 }
 
 ul{
