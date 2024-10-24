@@ -1,60 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body{
-    margin-top: 50px;
-    background-image: url(./1624843.jpg);
+    margin-top: 8vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("https://www.zupans.com/app/uploads/2016/09/Zupans_Sept-12_Lake-Grove_web-027.jpg");
     background-size: cover;
-    
-}
-img{
-    display: block;
-    justify-content: center;
-   width: 200px;
-   margin-left: auto;
-   margin-right: auto;
-
-
 }
 
-h1{
- display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-color: rgb(198, 47, 75);
-}
 h3, .list{
     display: flex;
-   flex-direction: row;
-   justify-content: center;
-   text-align: center;
-
-   }
-
-ul, li{
-    display: flex;
     flex-direction: column;
-    margin-top: 0px;
+    align-items: center;
     text-align: center;
-    font-size: 28px;
-    margin-top: 0;
-    margin-bottom: 5px;
 }
 
-button{
-    color: black;
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(115, 152, 184);
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vh;
+}
+
+.btn{
+    width: 155px;
+    height: 50px;
+
+    font-family: Amatic SC;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #b1b1b1;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    border: solid 1px #d7d6c7;
     border-radius: 20px;
 }
 
-.displayItems{
-    font-family: cursive;
+@media(min-width: 900px){
+    .btn{
+        width: 200px;
+        height: 70px;
+
+        font-weight: 900;
+        font-size: 38px;
+        letter-spacing: 1px;
+    }
+}
+
+.btn:hover{
+    background-color: #123906;
+    border: solid 1px #123906;
+}
+
+.item-input{
+    width: 200px;
+    margin-top: 20px;
+    background-color: #d7d6c7;
+    font-family: Amatic SC;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.inputs{
     display: flex;
-    flex-direction: column; 
-    margin-left: auto;
-    margin-right: auto;
-    height: 626px;
-    width: 446px;
-    margin-top: 50px;
-    background-image: url(./R.png);
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-list{
+    align-self: center;
+    margin: 0px 20px;
+    height: 40px;
+    width: 200px;
+
+    color: #d7d6c7;
+    font-family: Amatic SC;
+    font-weight: 900;
+    font-size: 22px;    
+    letter-spacing: 1px;
+
+    background-color: #1c5809;
+    border: solid 1px #123906;
+    border-radius: 20px;
+}
+
+@media(min-width: 900px){
+    .btn-list{
+        height: 50px;
+        width: 240px;
+        font-size: 30px;
+    }
+}
+
+.btn-list:hover,
+.btn-list:active{
+    background-color: #123906;
+    border: solid 1px #123906;
+}
+
+.displayItems{
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    padding-bottom: 20px;
+
+    width: 85%;
+    min-height: 400px;
+
+    font-family: Gochi Hand;
+    font-size: 38px;
+    color: #333333;
+  
     background-size: contain;
+    background-color: #d2d2b6;
+
+    border-top: outset 5px #e0e0c3;
+    border-left: outset 5px #e0e0c3;
+    border-right: outset 5px #e6da7b;
+    border-bottom: outset 5px #e6da7b;
+}
+
+@media(min-width: 900px){
+    .displayItems{
+        min-height: 630px;
+        width: 45vh;
+    };
+}
+
+
+
+h3{
+    padding-top: 15px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    text-shadow: #242424 1px 1px;
+    padding: 0px 17%;
+}
+
+li{
+    list-style: none;
+    padding: 8px auto;
+    text-align: left; 
+    font-size: 25px;
+}
+
+hr{
+    border: solid 1px #333333;
 }
