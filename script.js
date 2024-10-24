@@ -10,6 +10,10 @@ let groceryList = [];
 function loaded(){
     let addItems = document.getElementsByClassName('btn-add-item')[0];
     addItems.addEventListener('click', addItem);
+
+    let removeItems = document.getElementsByClassName('btn-reset-item')[0];
+    removeItems.addEventListener('click', removeItem)
+
     buttonOptions();
 }
 
@@ -46,25 +50,42 @@ function buttonOptions(){
 };
 
 function addItem(){
-    let itemInput = document.getElementsByClassName('item-input')[0].value
+    let itemInput = document.getElementsByClassName('item-input')[0].value.trim();
+    if(!itemInput){
+        return;
+    }
+    
     let display = document.getElementsByClassName('groceryItems')[0];
     let listItemElement = document.createElement('li');
-    listItemElement.className = "unpurchased listItem";
+    let hRuleElement = document.createElement('hr');
+    let divElement = document.createElement('div');
+
+    divElement.className = "unpurchased listItem";
+    listItemElement.className = "lI"
     listItemElement.innerText = itemInput;
 
-    groceryList.push(listItemElement);
+    groceryList.push(divElement);
     
-    listItemElement.addEventListener('click', () => {
-        let text = listItemElement.innerText;
+    divElement.addEventListener('click', () => {
+        let text = divElement.innerText;
+        let listItem = divElement.getElementsByClassName('lI')[0];
             let html = `<s>${text}</s>`
-            if(listItemElement.innerHTML == html){
-                listItemElement.innerHTML = `${text}`;
-                listItemElement.className = "unpurchased listItem";
+            if(listItem.innerHTML == html){
+                listItem.innerHTML = `${text}`;
+                divElement.className = "unpurchased listItem";
             }
             else{
-                listItemElement.innerHTML = `<s>${text}</s>`;
-                listItemElement.className = "purchased listItem";
+                listItem.innerHTML = `<s>${text}</s>`;
+                divElement.className = "purchased listItem";
             }
     });
-    display.append(listItemElement);
+    divElement.append(listItemElement);
+    divElement.append(hRuleElement);
+    display.append(divElement);
+}
+
+function removeItem(){
+    let display = document.getElementsByClassName('groceryItems list2')[0];
+    display.innerHTML = '';
+    groceryList = [];
 }
